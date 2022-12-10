@@ -23,4 +23,12 @@ Code: Pizza.pickSize("large");
 Expected Outcome: {
   this.size = "large";
 }
+
+Describe: Pizza.prototype.calculatePrice()
+
+Test: "It should total the price of the pizza from the chosen size and toppings."
+Code: Pizza.calculatePrice();
+Expected Outcome: {
+  this.price = price;
+}
 ```
