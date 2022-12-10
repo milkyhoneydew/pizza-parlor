@@ -1,0 +1,8 @@
+body {
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
+}
+
+.container {
+  background-color: rgb(230, 200, 146, 0.3);
+}
