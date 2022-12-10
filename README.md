@@ -16,5 +16,11 @@ Expected Outcome: {
   this.toppings = ["cheese"];
 }
 
+Describe: Pizza.prototype.pickSize()
 
+Test: "It should add a value to the size key."
+Code: Pizza.pickSize("large");
+Expected Outcome: {
+  this.size = "large";
+}
 ```

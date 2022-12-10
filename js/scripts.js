@@ -9,3 +9,6 @@ Pizza.prototype.addTopping = function(topping) {
   this.toppings.push(topping);
 }
 
+Pizza.prototype.pickSize = function(size) {
+  this.size = size;
+}
