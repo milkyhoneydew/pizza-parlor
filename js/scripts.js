@@ -16,23 +16,23 @@ Pizza.prototype.pickSize = function(size) {
 
 Pizza.prototype.calculatePrice = function() {
   if (this.toppings.includes("cheese")) {
-    this.price += 2;
+    this.price += 2.00;
   }
   if (this.toppings.includes("sauce")) {
-    this.price += 1.50;
+    this.price += 1.00;
   }
   if (this.toppings.includes("pepperoni") || this.toppings.includes("sausage")) {
-    this.price += 2;
+    this.price += 2.00;
   }
   if (this.toppings.includes("peppers") || this.toppings.includes("onions") || this.toppings.includes("mushrooms")) {
-    this.price += 1;
+    this.price += 1.00;
   }
   if (this.size === "small") {
-    this.price += 8;
+    this.price += 8.00;
   } else if (this.size === "medium") {
-    this.price += 10;
+    this.price += 10.00;
   } else {
-    this.price += 12;
+    this.price += 12.00;
   }
 }
 
@@ -68,8 +68,11 @@ function submitPizza(e) {
   customPizza.pickSize(customSize);
   customPizza.addTopping(...customToppings);
   customPizza.calculatePrice();
-  let customPrice = customPizza.price;
+  let customPrice = "$" + (customPizza.price.toString()) + ".00";
   document.querySelector("#price").innerText = customPrice;
+  customPizza.size = "";
+  customPizza.toppings = [];
+  customPizza = {};
 }
 
 window.addEventListener("load", function () {
