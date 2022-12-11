@@ -1,8 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
 body {
   background-image: url("../img/pizza.jpg");
   background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  background-color: rgb(230, 200, 146, 0.3);
+  background-color: rgb(230, 200, 146, 0.2);
+  font-family: 'Mate', serif;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+h1{
+  color: rgb(226, 214, 174);
+  font-family: 'Fascinate', cursive;
+  font-size: 5em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#toppings-container {
+  font-size: 2em;
+}
+
+#size-container {
+  font-size: 2em;
+}
+
+button {
+  display: block;
+  font-family: 'Mate', serif;
+  font-size: large;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-container {
+  font-size: 3em;
+  text-align: center;
 }
